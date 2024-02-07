@@ -11,7 +11,7 @@
 
 2. pair code
     <br>
-<a href='https://replit.com/@Adithyanz/EXbot-PairCode?s=app' target="_blank"><img alt='pair code' src='https://img.shields.io/badge/pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://replit.com/@Anandhu/EXbot-PairCode?s=app' target="_blank"><img alt='pair code' src='https://img.shields.io/badge/pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
   
 #### HEROKU DEPLOY
 
