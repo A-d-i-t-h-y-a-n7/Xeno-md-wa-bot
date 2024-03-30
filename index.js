@@ -1,25 +1,53 @@
-const {
-   spawn
-} = require('child_process')
-const path = require('path')
+case command.pattern && command.pattern.test(comman):
+            let match;
+            try {
+              match = text_msg
+                .replace(new RegExp(command.pattern, "i"), "")
+                .trim();
+            } catch {
+              match = false;
+            }
+            whats = new Message(conn, msg);
+            command.function(whats, match, msg, conn);
+            break;
 
-function start() {
-   let args = [path.join(__dirname, 'main.js'), ...process.argv.slice(2)]
-   console.log([process.argv[0], ...args].join('\n'))
-   let p = spawn(process.argv[0], args, {
-         stdio: ['inherit', 'inherit', 'inherit', 'ipc']
-      })
-      .on('message', data => {
-         if (data == 'reset') {
-            console.log('Restarting Bot...')
-            p.kill()
-            start()
-            delete p
-         }
-      })
-      .on('exit', code => {
-         console.error('Exited with code:', code)
-         if (code == '.' || code == 1 || code == 0) start()
-      })
-}
-start()
+          case text_msg && command.on === "text":
+            whats = new Message(conn, msg);
+            command.function(whats, text_msg, msg, conn, m);
+            break;
+
+          case command.on === "image" || command.on === "photo":
+            if (msg.type === "imageMessage") {
+              whats = new Image(conn, msg);
+              command.function(whats, text_msg, msg, conn, m);
+            }
+            break;
+
+          case command.on === "sticker":
+            if (msg.type === "stickerMessage") {
+              whats = new Sticker(conn, msg);
+              command.function(whats, msg, conn, m);
+            }
+            break;
+          case command.on === "video":
+            if (msg.type === "videoMessage") {
+              whats = new Video(conn, msg);
+              command.function(whats, msg, conn, m);
+            }
+            break;
+
+          default:
+            break;
+        }
+      });
+    });
+    process.on("uncaughtException", async (err) => {
+      await conn.sendMessage(conn.user.id, { text: err.message });
+    });
+    return conn;
+  };
+
+
+setTimeout(async () => {
+  await Xasena();
+}, 100);
