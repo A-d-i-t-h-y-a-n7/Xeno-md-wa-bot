@@ -1,17 +1,17 @@
 #### XENO MD WHATSAPP BOT
- Multi Device whatsapp bot based on X-xeno
+ Multi Device whatsapp bot based on Xaseena
 ***
 
 ### SETUP 
 
 1. Fork the repo
     <br>
-<a href='https://github.com/A-d-i-t-h-y-a-n7-xeno wa-Bot/fork' target="_blank"><img alt='Fork' src='https://img.shields.io/badge/FORK repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://github.com/X-E-N-N-OS-I-R/XENO--MD/fork' target="_blank"><img alt='Fork' src='https://img.shields.io/badge/FORK repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 
 2. pair code
     <br>
-<a href='https://replit.com/@Anandhu/EXbot-PairCode?s=app' target="_blank"><img alt='pair code' src='https://img.shields.io/badge/pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://xeno-md-pair-c073e66ffb06.herokuapp.com' target="_blank"><img alt='pair code' src='https://img.shields.io/badge/pair_code-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
   
 #### HEROKU DEPLOY
 
